@@ -16,6 +16,15 @@ rajak("mountain")
 
            #EG.PASSING A FUNCTION TO THE PARAMETER OF ANOTHER FUNCTION
 
+def to_upper(text):
+    print(text.upper())   
+
+def to_lower(text1):
+    print(text1.lower())
+
+to_upper("rajan")
+to_lower("HIKMAT")
+       
            
 
            
