@@ -1,0 +1,2 @@
+i am not from kathmandu. I am from jwalakheli am not from kathmandu. I am from jwalakhel stack is a non-primitive linear data structure 
+in which elements are push and popped only from one top called top of stack.
