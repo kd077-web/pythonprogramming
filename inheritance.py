@@ -103,8 +103,21 @@ class cat(dog):
             dog.show(self)
             print(f"the colony of cat is :{self.colony}")
 a=cat("germanstephard","limbre","tonga") 
-a.show()           
-           
+a.show()   
+
+              # HYBRID INHERITANCE
+
+# when two or more than two types of inheritance are combined then it is called hybrid inheritance.
+#syntax
+class baseclass:
+      pass
+class derived1(baseclass):
+      pass
+class derived2(baseclass):
+      pass
+class derived3(derived1,derived2):
+      pass  
+#here single and multiple inheritance are used        
       
                       
 
