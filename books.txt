@@ -1,0 +1,6 @@
+1. physics
+2.dsa
+3.discrete structure
+4.oop 
+5.softeare engineering using oop
+6.applied mathematics

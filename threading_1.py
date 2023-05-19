@@ -61,4 +61,22 @@ class rak(Thread):
     def method(self):
         print("w e are from only a child class")
 t=rak() 
-t.start()                                     
+t.start() 
+#start() run()   and join()
+#join: the func of join thread is to execute the child thread then only other threads 
+from threading import Thread
+class Animal(Thread) :
+    def dog(self):
+        for i in range(5):
+            print("hello buddy we all are from child")
+g=Animal()
+
+g.start()
+g.join()  
+
+for i in range(5):
+    print("hello ia am from main thread")  
+    
+            
+    
+                                     

@@ -13,3 +13,8 @@ f.close()
 #for example  the pupose of using with statement is that we donot have to close a file
 with open("file1.txt",'w') as f:
     f.write("i am from pokhara")
+'''
+there are two types of files they are text file and binary file .text file is sed for storing characters and bnary files 
+bytes.ie. audio,video,pdf files etc.
+file modes  r,w,r+,w+,a,a+ for binary same as text with b eg.rb,rb+...
+'''    
