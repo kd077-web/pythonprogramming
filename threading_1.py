@@ -70,6 +70,7 @@ class Animal(Thread) :
         for i in range(5):
             print("hello buddy we all are from child")
 g=Animal()
+g.dog()
 
 g.start()
 g.join()  

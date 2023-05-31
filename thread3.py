@@ -8,17 +8,24 @@
 from threading import *
 from time import sleep
 
+
 def switch_light():
-    sleep(3)
+    
+
+    sleep(1)
+    print("green light is on")
     e.set()
     
     
-    print("green light is on")
-    sleep(3)
+    
+    sleep(1)
     print("red light is on")
+
     
     e.clear()
+    
 def switchoff() :
+    
     e.wait()
     while e.is_set():
         print("you can go")
@@ -28,5 +35,34 @@ t1=Thread(target=switch_light)
 t2=Thread(target=switchoff)
 t1.start()
 t2.start()
+#                      condition communication thread
+#it is same as the evet but it has fast communicaton between threads .first to send signal we use notify() for accept wait()
+from threading import *
+lst=[]
+def producer():
+    s.acquire()
+    for i in range(0,5):
+        lst.append(i)
+        print("list is apended")
+    s.notify()    
+    s.release()
+def consumer():
+    s.acquire()
+    s.wait()
+    s.release()
+    print(lst)
+    
+s=Condition() 
+t1=Thread(target=producer)
+t2=Thread(target=consumer)
+t1.start()
+t2.start()
+   
+
+
+
+
+
+
 
 

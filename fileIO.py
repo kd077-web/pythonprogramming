@@ -17,4 +17,5 @@ with open("file1.txt",'w') as f:
 there are two types of files they are text file and binary file .text file is sed for storing characters and bnary files 
 bytes.ie. audio,video,pdf files etc.
 file modes  r,w,r+,w+,a,a+ for binary same as text with b eg.rb,rb+...
+writelines is used to write a grou of string in a file ge lst=[ram,hari,..]etc.
 '''    
